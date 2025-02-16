@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higt&Low Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .game-container {
+            border: 2px solid #ccc;
+            padding: 20px;
+            display: inline-block;
+            background-color: #f9f9f9;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Higt&Low Game</h1>
+        <p id="card-text">現在のカード: <span id="current-card"></span></p>
+        <button id="high-btn" onclick="guess('high')">High</button>
+        <button id="low-btn" onclick="guess('low')">Low</button>
+        <p id="result"></p>
+        <p id="streak"></p>
+        <p id="max-streak"></p>
+        <button id="restart" onclick="restartGame()">もう一度プレイ</button>
+    </div>
+    <script type="text/javascript" src="high-row.js"></script>
+</body>
+
+</html>
